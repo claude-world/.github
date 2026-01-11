@@ -4,6 +4,10 @@
 
 **Don't write code. Direct Claude to write code for you.**
 
+<a href="i18n/README-zh-tw.md">繁體中文</a> • <a href="i18n/README-ja.md">日本語</a>
+
+<br/>
+
 [![Website](https://img.shields.io/badge/Website-claude--world.com-blue?style=flat-square)](https://claude-world.com)
 [![Discord](https://img.shields.io/badge/Discord-Join%20Community-7289da?style=flat-square&logo=discord&logoColor=white)](https://discord.com/invite/rBtHzSD288)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
@@ -133,62 +137,6 @@ Hands-on tutorials
 [**GitHub Issues**](https://github.com/claude-world/director-mode-lite/issues)
 
 </div>
-
----
-
-<details><summary><b>🇹🇼 繁體中文</b></summary>
-
-# Director Mode for Claude Code
-
-**不要寫程式碼，指揮 Claude 幫你寫。**
-
-## 總監模式
-
-一種改變你與 Claude Code 協作方式的方法論。
-
-```
-傳統方式：你一行行寫程式 → AI 輔助片段 → 來回修正好幾小時
-總監模式：你定義願景 → AI 自主執行 → 完整、測試、文件完備
-```
-
-## Director Mode Lite
-
-免費開源工具包：Auto-Loop、13 個指令、3 個 Agents、4 個 Skills
-
-```bash
-/plugin marketplace add claude-world/director-mode-lite
-```
-
-**社群**：[Discord](https://discord.com/invite/rBtHzSD288) • [網站](https://claude-world.com)
-
-</details>
-
-<details><summary><b>🇯🇵 日本語</b></summary>
-
-# Director Mode for Claude Code
-
-**コードを書くな、Claude に指示を出せ。**
-
-## ディレクターモード
-
-Claude Code との協業を変革するメソドロジー。
-
-```
-従来の方法: コードを1行ずつ書く → AIが支援 → 数時間やり取り
-ディレクターモード: ビジョンを定義 → AIが自律実行 → 完成品
-```
-
-## Director Mode Lite
-
-無料オープンソースツールキット
-
-```bash
-/plugin marketplace add claude-world/director-mode-lite
-```
-
-**コミュニティ**：[Discord](https://discord.com/invite/rBtHzSD288) • [ウェブサイト](https://claude-world.com)
-
-</details>
 
 ---
 
