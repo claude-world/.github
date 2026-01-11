@@ -1,90 +1,131 @@
 <h1 align="center">Claude World</h1>
 
+<h3 align="center">AI-Assisted Development Methodology for Claude Code</h3>
+
 <p align="center">
-  <strong>Use Claude Code like a Director, not a Programmer</strong>
+  <a href="https://claude-world.com">Homepage</a> |
+  <a href="https://github.com/claude-world/director-mode-lite">Director Mode Lite</a> |
+  <a href="https://discord.com/invite/rBtHzSD288">Discord</a>
 </p>
 
 <p align="center">
-  <a href="https://claude-world.com"><img src="https://img.shields.io/badge/Website-claude--world.com-blue?style=flat-square" alt="Website"></a>
-  <a href="https://discord.com/invite/rBtHzSD288"><img src="https://img.shields.io/badge/Discord-Join%20Community-7289da?style=flat-square&logo=discord&logoColor=white" alt="Discord"></a>
-  <a href="https://x.com/lukashanren1"><img src="https://img.shields.io/badge/Twitter-@lukashanren1-1DA1F2?style=flat-square&logo=twitter&logoColor=white" alt="Twitter"></a>
+  <a href="https://github.com/claude-world/director-mode-lite/stargazers"><img src="https://img.shields.io/github/stars/claude-world/director-mode-lite?style=flat-square" alt="GitHub Stars"></a>
+  <a href="https://github.com/claude-world/director-mode-lite/issues"><img src="https://img.shields.io/github/issues/claude-world/director-mode-lite?style=flat-square" alt="GitHub Issues"></a>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square" alt="License: MIT"></a>
+  <a href="https://discord.com/invite/rBtHzSD288"><img src="https://img.shields.io/badge/Discord-Join%20Us-7289da?style=flat-square&logo=discord&logoColor=white" alt="Discord"></a>
 </p>
 
 ---
 
-## Director Mode
+## What is Director Mode?
 
-A methodology that transforms how you work with AI coding assistants.
+**Director Mode** is a methodology that transforms how you work with Claude Code.
 
-**Don't write code. Direct Claude to write code for you.**
+Instead of writing code line by line, you **direct** Claude to execute your vision autonomously.
 
 ```
-Traditional              Director Mode
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-You write code      →    You define the vision
-AI follows orders   →    AI executes autonomously
-Micromanagement     →    Strategic oversight
-Sequential tasks    →    Parallel agent execution
-Manual iteration    →    Auto-Loop until done
+You: "Build a REST API with user authentication"
+Claude: Analyzes → Plans → Implements → Tests → Documents → Done
 ```
 
-## Director Mode Lite
+### The Paradigm Shift
 
-**Free, open-source toolkit** that brings Director Mode to Claude Code.
+| Traditional AI Coding | Director Mode |
+|----------------------|---------------|
+| You write code | You define the vision |
+| AI assists with snippets | AI executes end-to-end |
+| Manual task management | Autonomous iteration |
+| One thing at a time | Parallel agent execution |
+| Stop and ask constantly | Run until completion |
 
-| Feature | Description |
-|---------|-------------|
-| **Auto-Loop** | TDD-based autonomous development - runs until all criteria met |
-| **5-Step Workflow** | Focus → Prevent Overdev → Test First → Document → Commit |
-| **3 Agents** | code-reviewer, debugger, doc-writer |
-| **13 Commands** | Workflow automation for common tasks |
-| **4 Skills** | Specialized expertise modules |
+---
 
-### Quick Install
+## 🚀 Director Mode Lite
+
+**Free, open-source toolkit** that brings Director Mode to your projects.
+
+### Key Features
+
+- **⭐ Auto-Loop** — TDD-based autonomous development cycle that runs until all acceptance criteria are met
+- **🔄 5-Step Workflow** — Focus Problem → Prevent Overdev → Test First → Document → Commit
+- **🤖 3 Agents** — code-reviewer, debugger, doc-writer (auto-triggered)
+- **⚡ 13 Commands** — Workflow automation for common development tasks
+- **🎯 4 Skills** — Specialized expertise modules
+
+### Quick Start
 
 ```bash
-# Plugin install (recommended)
+# Option 1: Plugin install (recommended)
 /plugin install https://github.com/claude-world/director-mode-lite
 
-# Or one-line script
+# Option 2: One-line script
 curl -fsSL https://raw.githubusercontent.com/claude-world/director-mode-lite/main/install.sh | bash -s .
 ```
 
+### Auto-Loop in Action
+
+```bash
+/auto-loop "Create a calculator with add, subtract, multiply, divide functions. Include unit tests."
+
+# Claude automatically:
+# [1] Writes failing tests (RED)
+# [2] Implements code to pass (GREEN)
+# [3] Refactors for quality (REFACTOR)
+# [4] Repeats until all criteria met ✓
+```
+
 <p align="center">
-  <a href="https://github.com/claude-world/director-mode-lite">
-    <img src="https://img.shields.io/github/stars/claude-world/director-mode-lite?style=social" alt="Stars">
-  </a>
-  <a href="https://github.com/claude-world/director-mode-lite">
-    <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT">
-  </a>
+  <a href="https://github.com/claude-world/director-mode-lite"><img src="https://img.shields.io/badge/Get%20Started-Director%20Mode%20Lite-blue?style=for-the-badge" alt="Get Started"></a>
 </p>
+
+---
+
+## 🌐 Community
+
+<table>
+<tr>
+<td align="center" width="33%">
+<a href="https://claude-world.com"><strong>Website</strong></a><br>
+<sub>Tutorials & Guides</sub>
+</td>
+<td align="center" width="33%">
+<a href="https://discord.com/invite/rBtHzSD288"><strong>Discord</strong></a><br>
+<sub>Ask Questions & Share</sub>
+</td>
+<td align="center" width="34%">
+<a href="https://github.com/claude-world/director-mode-lite/issues"><strong>GitHub Issues</strong></a><br>
+<sub>Bugs & Feature Requests</sub>
+</td>
+</tr>
+</table>
 
 ---
 
 <details>
-<summary><b>繁體中文</b></summary>
+<summary><b>🇹🇼 繁體中文</b></summary>
+
+<br>
 
 ### 總監模式
 
-一種改變你與 AI 程式助手協作方式的方法論。
+一種改變你與 Claude Code 協作方式的方法論。
 
 **不要寫程式碼，指揮 Claude 幫你寫。**
 
-| 傳統開發 | 總監模式 |
-|---------|---------|
-| 你寫程式碼 | 你定義願景 |
-| AI 聽從指令 | AI 自主執行 |
-| 微觀管理 | 策略監督 |
-| 逐一執行任務 | 平行 Agent 執行 |
-| 手動迭代 | Auto-Loop 自動完成 |
+```
+你：「建立一個有用戶認證的 REST API」
+Claude：分析 → 規劃 → 實作 → 測試 → 文件 → 完成
+```
 
-**Director Mode Lite** 是免費開源的工具包：
+### Director Mode Lite
+
+免費開源的工具包：
 
 | 功能 | 說明 |
 |-----|------|
-| **Auto-Loop** | 基於 TDD 的自動開發循環 |
+| **Auto-Loop** | 基於 TDD 的自動開發循環，直到所有條件達成 |
 | **5 步驟工作流** | 聚焦問題 → 防止過度開發 → 測試先行 → 文件 → 提交 |
-| **3 個 Agents** | 程式碼審查、除錯、文件撰寫 |
+| **3 個 Agents** | 程式碼審查、除錯、文件撰寫（自動觸發）|
 | **13 個指令** | 工作流程自動化 |
 
 ```bash
@@ -96,29 +137,30 @@ curl -fsSL https://raw.githubusercontent.com/claude-world/director-mode-lite/mai
 </details>
 
 <details>
-<summary><b>日本語</b></summary>
+<summary><b>🇯🇵 日本語</b></summary>
+
+<br>
 
 ### ディレクターモード
 
-AIコーディングアシスタントとの協業を変革するメソドロジー。
+Claude Code との協業を変革するメソドロジー。
 
-**コードを書くな、Claudeに指示を出せ。**
+**コードを書くな、Claude に指示を出せ。**
 
-| 従来の開発 | ディレクターモード |
-|-----------|------------------|
-| コードを書く | ビジョンを定義 |
-| AIが指示に従う | AIが自律的に実行 |
-| マイクロマネジメント | 戦略的監督 |
-| 逐次タスク | 並列Agent実行 |
-| 手動イテレーション | Auto-Loopで自動完了 |
+```
+あなた：「ユーザー認証付きの REST API を作って」
+Claude：分析 → 計画 → 実装 → テスト → ドキュメント → 完了
+```
 
-**Director Mode Lite** は無料オープンソースのツールキット：
+### Director Mode Lite
+
+無料オープンソースのツールキット：
 
 | 機能 | 説明 |
 |-----|------|
-| **Auto-Loop** | TDDベースの自動開発サイクル |
-| **5ステップ** | 問題分析 → 過剰開発防止 → テスト先行 → ドキュメント → コミット |
-| **3 Agents** | コードレビュー、デバッグ、ドキュメント |
+| **Auto-Loop** | TDD ベースの自動開発サイクル、全条件達成まで継続 |
+| **5 ステップ** | 問題分析 → 過剰開発防止 → テスト先行 → ドキュメント → コミット |
+| **3 Agents** | コードレビュー、デバッグ、ドキュメント（自動起動）|
 | **13 コマンド** | ワークフロー自動化 |
 
 ```bash
@@ -132,5 +174,5 @@ AIコーディングアシスタントとの協業を変革するメソドロジ
 ---
 
 <p align="center">
-  <sub>Made with direction by <a href="https://claude-world.com">Claude World Taiwan</a></sub>
+  <sub>Built with direction by <a href="https://claude-world.com">Claude World Taiwan</a> 🇹🇼</sub>
 </p>
