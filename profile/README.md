@@ -35,7 +35,7 @@ Claude: Analyzes → Plans → Implements → Tests → Documents → Done
 | You write code | You define the vision |
 | AI assists with snippets | AI executes end-to-end |
 | Manual task management | Autonomous iteration |
-| One thing at a time | Parallel agent execution |
+| One task at a time | Parallel agent execution |
 | Stop and ask constantly | Run until completion |
 
 ---
@@ -55,10 +55,10 @@ Claude: Analyzes → Plans → Implements → Tests → Documents → Done
 ### Quick Start
 
 ```bash
-# Option 1: Plugin install (recommended)
-/plugin install https://github.com/claude-world/director-mode-lite
+# Plugin install (recommended)
+/plugin marketplace add claude-world/director-mode-lite
 
-# Option 2: One-line script
+# Or one-line script
 curl -fsSL https://raw.githubusercontent.com/claude-world/director-mode-lite/main/install.sh | bash -s .
 ```
 
@@ -80,6 +80,34 @@ curl -fsSL https://raw.githubusercontent.com/claude-world/director-mode-lite/mai
 
 ---
 
+## 📚 Projects
+
+| Project | Description | Stars |
+|---------|-------------|-------|
+| [Director Mode Lite](https://github.com/claude-world/director-mode-lite) | Complete toolkit for Claude Code | ![GitHub Stars](https://img.shields.io/github/stars/claude-world/director-mode-lite?style=social) |
+
+---
+
+## 🛠️ Commands Reference
+
+| Command | Description |
+|---------|-------------|
+| `/auto-loop` | TDD autonomous development cycle |
+| `/workflow` | Complete 5-step development flow |
+| `/focus-problem` | Analyze and understand problems |
+| `/test-first` | TDD cycle (Red-Green-Refactor) |
+| `/smart-commit` | Conventional commits automation |
+| `/plan` | Task breakdown with TodoWrite |
+| `/project-health-check` | 7-point project audit |
+| `/project-init` | Quick project setup |
+| `/check-environment` | Environment verification |
+| `/handoff-codex` | Delegate to Codex CLI |
+| `/handoff-gemini` | Delegate to Gemini CLI |
+| `/agents` | List available agents |
+| `/skills` | List available skills |
+
+---
+
 ## 🌐 Community
 
 <table>
@@ -98,6 +126,18 @@ curl -fsSL https://raw.githubusercontent.com/claude-world/director-mode-lite/mai
 </td>
 </tr>
 </table>
+
+---
+
+## 🙏 Contributing
+
+We welcome contributions! Please see [contributing guidelines](https://github.com/claude-world/director-mode-lite/blob/main/CONTRIBUTING.md).
+
+---
+
+## 📄 License
+
+MIT License - Free for personal and commercial use.
 
 ---
 
@@ -129,7 +169,7 @@ Claude：分析 → 規劃 → 實作 → 測試 → 文件 → 完成
 | **13 個指令** | 工作流程自動化 |
 
 ```bash
-/plugin install https://github.com/claude-world/director-mode-lite
+/plugin marketplace add claude-world/director-mode-lite
 ```
 
 **社群**：[Discord](https://discord.com/invite/rBtHzSD288) • [網站](https://claude-world.com)
@@ -164,7 +204,7 @@ Claude：分析 → 計画 → 実装 → テスト → ドキュメント → �
 | **13 コマンド** | ワークフロー自動化 |
 
 ```bash
-/plugin install https://github.com/claude-world/director-mode-lite
+/plugin marketplace add claude-world/director-mode-lite
 ```
 
 **コミュニティ**：[Discord](https://discord.com/invite/rBtHzSD288) • [ウェブサイト](https://claude-world.com)
