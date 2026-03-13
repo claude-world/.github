@@ -1,147 +1,75 @@
 <div align="center">
 
-# Director Mode for Claude Code
+# Claude World
 
-**不要寫程式碼，指揮 Claude 幫你寫。**
+**精通 Claude Code 的開源工具生態系**
 
 <a href="../README.md">English</a> • 繁體中文 • <a href="README-ja.md">日本語</a>
 
-<br/>
-
-[![網站](https://img.shields.io/badge/網站-claude--world.com-blue?style=flat-square)](https://claude-world.com)
+[![Website](https://img.shields.io/badge/網站-claude--world.com-blue?style=flat-square)](https://claude-world.com)
 [![Discord](https://img.shields.io/badge/Discord-加入社群-7289da?style=flat-square&logo=discord&logoColor=white)](https://discord.com/invite/rBtHzSD288)
-[![授權](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
-[![Stars](https://img.shields.io/github/stars/claude-world/director-mode-lite?style=flat-square)](https://github.com/claude-world/director-mode-lite/stargazers)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
 </div>
 
 ---
 
-## 簡介
+## 開源專案
 
-**總監模式**改變你與 Claude Code 的協作方式。不再一行行寫程式，而是定義願景，讓 Claude 自主執行。
+### 開發工具包
 
-<table><tr><td width="50%">
+| 專案 | Stars | 說明 |
+|------|-------|------|
+| **[director-mode-lite](https://github.com/claude-world/director-mode-lite)** | ![Stars](https://img.shields.io/github/stars/claude-world/director-mode-lite?style=flat-square) | 不寫程式碼 — 指揮 Claude 寫。25 commands、14 agents、29 skills + TDD Auto-Loop。 |
+| **[claude-world-examples](https://github.com/claude-world/claude-world-examples)** | ![Stars](https://img.shields.io/github/stars/claude-world/claude-world-examples?style=flat-square) | Claude Code 和 Director Mode 實戰範例與最佳實踐。 |
 
-**傳統 AI 寫作**
-```
-你：幫我寫一個函數
-AI：這是函數
-你：加上錯誤處理
-AI：這是更新後的程式
-你：寫測試
-AI：這是測試
-...重複好幾小時
-```
+### 安全
 
-</td><td width="50%">
+| 專案 | Stars | 說明 |
+|------|-------|------|
+| **[claude-skill-antivirus](https://github.com/claude-world/claude-skill-antivirus)** | ![Stars](https://img.shields.io/github/stars/claude-world/claude-skill-antivirus?style=flat-square) | Claude Code Skills 安全掃描器 — 9 引擎偵測 71K+ skills 中的惡意模式。 |
 
-**總監模式**
-```
-你：建立一個 REST API，
-   包含認證、測試、文件
+### MCP 伺服器
 
-AI：分析 → 規劃 → 實作
-    → 測試 → 文件 → 完成
+| 專案 | Stars | 說明 |
+|------|-------|------|
+| **[cf-browser](https://github.com/claude-world/cf-browser)** | ![Stars](https://img.shields.io/github/stars/claude-world/cf-browser?style=flat-square) | Cloudflare Browser Rendering 代理 — 9 個 MCP 工具（截圖、PDF、Markdown、爬取）。 |
+| **[trend-pulse](https://github.com/claude-world/trend-pulse)** | ![Stars](https://img.shields.io/github/stars/claude-world/trend-pulse?style=flat-square) | 免費趨勢聚合器 — 15 個來源、零認證。CLI + Python 函式庫 + MCP Server。 |
+| **[mcp-director-mode-server](https://github.com/claude-world/mcp-director-mode-server)** | ![Stars](https://img.shields.io/github/stars/claude-world/mcp-director-mode-server?style=flat-square) | Director Mode 教學用 MCP Server — TDD、Auto-Cycle、SpecKit 示範。 |
 
-✓ 完整、測試、文件完備
-```
+### 工具
 
-</td></tr></table>
-
----
-
-## 🚀 Director Mode Lite
-
-Claude Code 的免費開源工具包，具備 **TDD 自動循環**，持續執行直到所有驗收標準達成。
-
-```bash
-/auto-loop "建立 Todo 模組，包含 add、remove、toggle 功能和單元測試"
-
-# Claude 自動迭代：
-# RED   → 寫失敗測試
-# GREEN → 讓測試通過
-# REFACTOR → 重構程式碼
-# → 重複直到所有條件達成 ✓
-```
-
-### 包含內容
-
-| 組件 | 數量 | 說明 |
-|-----|-----|-----|
-| **指令** | 13 | `/auto-loop`, `/workflow`, `/focus-problem` 等 |
-| **Agents** | 3 | code-reviewer, debugger, doc-writer |
-| **Skills** | 4 | 專業技能模組 |
+| 專案 | Stars | 說明 |
+|------|-------|------|
+| **[skills-optimizer](https://github.com/claude-world/skills-optimizer)** | ![Stars](https://img.shields.io/github/stars/claude-world/skills-optimizer?style=flat-square) | 壓縮 Claude Code agents & skills — 6:1 壓縮比，語意驗證保真。 |
+| **[skill-universal](https://github.com/claude-world/skill-universal)** | ![Stars](https://img.shields.io/github/stars/claude-world/skill-universal?style=flat-square) | 寫一次 Skill，到處運行 — Claude Code、Agent SDK、OpenClaw。 |
+| **[claude-code-rfcs](https://github.com/claude-world/claude-code-rfcs)** | ![Stars](https://img.shields.io/github/stars/claude-world/claude-code-rfcs?style=flat-square) | 社群驅動的 Claude Code 架構提案。 |
 
 ---
 
-## 📦 快速安裝
+## 快速開始
 
 ```bash
-/plugin marketplace add claude-world/director-mode-lite
-```
-
-或使用 curl：
-
-```bash
+# 安裝 Director Mode Lite
 curl -fsSL https://raw.githubusercontent.com/claude-world/director-mode-lite/main/install.sh | bash -s .
+
+# 掃描 skill 安全性
+npx claude-skill-antivirus scan <skill-name>
+
+# 透過 MCP 取得趨勢話題
+npx trend-pulse trending --geo TW --count 10
 ```
 
 ---
 
-## 🛠️ 指令列表
-
-| 指令 | 說明 |
-|-----|------|
-| `/auto-loop` | TDD 自動開發（持續執行直到完成）|
-| `/workflow` | 5 步驟流程：聚焦 → 防止過度開發 → 測試 → 文件 → 提交 |
-| `/focus-problem` | 寫作前深入分析 |
-| `/test-first` | TDD 循環（紅-綠-重構）|
-| `/smart-commit` | 自動產生 conventional commits |
-| `/plan` | 用 TodoWrite 分解任務 |
-
-[查看全部 13 個指令](https://github.com/claude-world/director-mode-lite#commands)
-
----
-
-## 📚 專案
-
-<table><tr><td width="50%">
-
-**[Director Mode Lite](https://github.com/claude-world/director-mode-lite)**
-
-Claude Code 完整工具包
-- 13 個指令
-- 3 個 Agents
-- 4 個 Skills
-- Auto-Loop
-
-</td><td width="50%">
-
-**[範例](https://github.com/claude-world/director-mode-lite/tree/main/examples)**
-
-實作教學
-- 計算機（5 分鐘）
-- REST API（15 分鐘）
-
-</td></tr></table>
-
----
-
-## 🌐 社群
+## 社群
 
 <div align="center">
 
-[**網站**](https://claude-world.com) &nbsp;•&nbsp;
+[**claude-world.com**](https://claude-world.com) &nbsp;•&nbsp;
 [**Discord**](https://discord.com/invite/rBtHzSD288) &nbsp;•&nbsp;
 [**GitHub Issues**](https://github.com/claude-world/director-mode-lite/issues)
 
-</div>
-
----
-
-<div align="center">
-
-由 [Claude World Taiwan](https://claude-world.com) 構建 🇹🇼
+由 [Claude World Taiwan](https://claude-world.com) 打造 🇹🇼
 
 </div>
