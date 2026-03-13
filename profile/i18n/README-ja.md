@@ -29,12 +29,13 @@
 |------------|-------|------|
 | **[claude-skill-antivirus](https://github.com/claude-world/claude-skill-antivirus)** | ![Stars](https://img.shields.io/github/stars/claude-world/claude-skill-antivirus?style=flat-square) | Claude Code Skills セキュリティスキャナー — 9 エンジンで 71K+ skills の悪意パターンを検出。 |
 
-### MCP サーバー
+### MCP サーバー & 連携
 
 | プロジェクト | Stars | 説明 |
 |------------|-------|------|
-| **[cf-browser](https://github.com/claude-world/cf-browser)** | ![Stars](https://img.shields.io/github/stars/claude-world/cf-browser?style=flat-square) | Cloudflare Browser Rendering プロキシ — 9 MCP ツール（スクリーンショット、PDF、Markdown、クロール）。 |
-| **[trend-pulse](https://github.com/claude-world/trend-pulse)** | ![Stars](https://img.shields.io/github/stars/claude-world/trend-pulse?style=flat-square) | 無料トレンドアグリゲーター — 15 ソース、認証不要。CLI + Python + MCP Server。 |
+| **[cf-browser](https://github.com/claude-world/cf-browser)** | ![Stars](https://img.shields.io/github/stars/claude-world/cf-browser?style=flat-square) | Cloudflare Browser Rendering プロキシ — 10 MCP ツール（スクリーンショット、PDF、Markdown、クロール、a11y）。 |
+| **[trend-pulse](https://github.com/claude-world/trend-pulse)** | ![Stars](https://img.shields.io/github/stars/claude-world/trend-pulse?style=flat-square) | 無料トレンドアグリゲーター — 20 ソース、認証不要。CLI + Python + MCP Server。 |
+| **[notebooklm-skill](https://github.com/claude-world/notebooklm-skill)** | ![Stars](https://img.shields.io/github/stars/claude-world/notebooklm-skill?style=flat-square) | NotebookLM でリサーチ、Claude でコンテンツ作成。13 MCP ツール搭載のパイプライン。 |
 | **[mcp-director-mode-server](https://github.com/claude-world/mcp-director-mode-server)** | ![Stars](https://img.shields.io/github/stars/claude-world/mcp-director-mode-server?style=flat-square) | Director Mode 学習用 MCP Server — TDD、Auto-Cycle、SpecKit デモ。 |
 
 ### ユーティリティ
@@ -57,7 +58,8 @@ curl -fsSL https://raw.githubusercontent.com/claude-world/director-mode-lite/mai
 npx claude-skill-antivirus scan <skill-name>
 
 # MCP でトレンドトピックを取得
-npx trend-pulse trending --geo TW --count 10
+pip install "trend-pulse[mcp]"
+trend-pulse trending --geo TW --count 10
 ```
 
 ---

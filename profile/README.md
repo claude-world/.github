@@ -29,12 +29,13 @@
 |---------|-------|-------------|
 | **[claude-skill-antivirus](https://github.com/claude-world/claude-skill-antivirus)** | ![Stars](https://img.shields.io/github/stars/claude-world/claude-skill-antivirus?style=flat-square) | Security scanner for Claude Code Skills — 9 engines detect malicious patterns across 71K+ skills. |
 
-### MCP Servers
+### MCP Servers & Integrations
 
 | Project | Stars | Description |
 |---------|-------|-------------|
-| **[cf-browser](https://github.com/claude-world/cf-browser)** | ![Stars](https://img.shields.io/github/stars/claude-world/cf-browser?style=flat-square) | Cloudflare Browser Rendering proxy — 9 MCP tools (screenshot, PDF, markdown, scrape, crawl). |
-| **[trend-pulse](https://github.com/claude-world/trend-pulse)** | ![Stars](https://img.shields.io/github/stars/claude-world/trend-pulse?style=flat-square) | Free trending topics aggregator — 15 sources, zero auth. CLI + Python library + MCP Server. |
+| **[cf-browser](https://github.com/claude-world/cf-browser)** | ![Stars](https://img.shields.io/github/stars/claude-world/cf-browser?style=flat-square) | Cloudflare Browser Rendering proxy — 10 MCP tools (screenshot, PDF, markdown, scrape, a11y, crawl). |
+| **[trend-pulse](https://github.com/claude-world/trend-pulse)** | ![Stars](https://img.shields.io/github/stars/claude-world/trend-pulse?style=flat-square) | Free trending topics aggregator — 20 sources, zero auth. CLI + Python library + MCP Server. |
+| **[notebooklm-skill](https://github.com/claude-world/notebooklm-skill)** | ![Stars](https://img.shields.io/github/stars/claude-world/notebooklm-skill?style=flat-square) | NotebookLM does the research, Claude writes the content. Research-to-content pipeline with 13 MCP tools. |
 | **[mcp-director-mode-server](https://github.com/claude-world/mcp-director-mode-server)** | ![Stars](https://img.shields.io/github/stars/claude-world/mcp-director-mode-server?style=flat-square) | Teaching MCP Server for Director Mode — TDD, Auto-Cycle, SpecKit demos. |
 
 ### Utilities
@@ -57,7 +58,8 @@ curl -fsSL https://raw.githubusercontent.com/claude-world/director-mode-lite/mai
 npx claude-skill-antivirus scan <skill-name>
 
 # Get trending topics via MCP
-npx trend-pulse trending --geo TW --count 10
+pip install "trend-pulse[mcp]"
+trend-pulse trending --geo TW --count 10
 ```
 
 ---

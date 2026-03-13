@@ -29,12 +29,13 @@
 |------|-------|------|
 | **[claude-skill-antivirus](https://github.com/claude-world/claude-skill-antivirus)** | ![Stars](https://img.shields.io/github/stars/claude-world/claude-skill-antivirus?style=flat-square) | Claude Code Skills 安全掃描器 — 9 引擎偵測 71K+ skills 中的惡意模式。 |
 
-### MCP 伺服器
+### MCP 伺服器與整合
 
 | 專案 | Stars | 說明 |
 |------|-------|------|
-| **[cf-browser](https://github.com/claude-world/cf-browser)** | ![Stars](https://img.shields.io/github/stars/claude-world/cf-browser?style=flat-square) | Cloudflare Browser Rendering 代理 — 9 個 MCP 工具（截圖、PDF、Markdown、爬取）。 |
-| **[trend-pulse](https://github.com/claude-world/trend-pulse)** | ![Stars](https://img.shields.io/github/stars/claude-world/trend-pulse?style=flat-square) | 免費趨勢聚合器 — 15 個來源、零認證。CLI + Python 函式庫 + MCP Server。 |
+| **[cf-browser](https://github.com/claude-world/cf-browser)** | ![Stars](https://img.shields.io/github/stars/claude-world/cf-browser?style=flat-square) | Cloudflare Browser Rendering 代理 — 10 個 MCP 工具（截圖、PDF、Markdown、爬取、無障礙樹）。 |
+| **[trend-pulse](https://github.com/claude-world/trend-pulse)** | ![Stars](https://img.shields.io/github/stars/claude-world/trend-pulse?style=flat-square) | 免費趨勢聚合器 — 20 個來源、零認證。CLI + Python 函式庫 + MCP Server。 |
+| **[notebooklm-skill](https://github.com/claude-world/notebooklm-skill)** | ![Stars](https://img.shields.io/github/stars/claude-world/notebooklm-skill?style=flat-square) | NotebookLM 做研究，Claude 寫內容。研究到內容的自動化 pipeline，13 個 MCP 工具。 |
 | **[mcp-director-mode-server](https://github.com/claude-world/mcp-director-mode-server)** | ![Stars](https://img.shields.io/github/stars/claude-world/mcp-director-mode-server?style=flat-square) | Director Mode 教學用 MCP Server — TDD、Auto-Cycle、SpecKit 示範。 |
 
 ### 工具
@@ -57,7 +58,8 @@ curl -fsSL https://raw.githubusercontent.com/claude-world/director-mode-lite/mai
 npx claude-skill-antivirus scan <skill-name>
 
 # 透過 MCP 取得趨勢話題
-npx trend-pulse trending --geo TW --count 10
+pip install "trend-pulse[mcp]"
+trend-pulse trending --geo TW --count 10
 ```
 
 ---
