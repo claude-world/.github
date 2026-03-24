@@ -16,11 +16,20 @@
 
 ## Projects
 
+### Content & Automation
+
+| Project | Stars | Description |
+|---------|-------|-------------|
+| **[notebooklm-skill](https://github.com/claude-world/notebooklm-skill)** | ![Stars](https://img.shields.io/github/stars/claude-world/notebooklm-skill?style=flat-square) | NotebookLM does the research, Claude writes the content. Research-to-content pipeline with 13 MCP tools. |
+| **[claude-world-studio](https://github.com/claude-world/claude-world-studio)** | ![Stars](https://img.shields.io/github/stars/claude-world/claude-world-studio?style=flat-square) | AI-powered content pipeline: trend discovery → research → social publishing. Built with Claude Agent SDK + MCP. |
+| **[trend-pulse](https://github.com/claude-world/trend-pulse)** | ![Stars](https://img.shields.io/github/stars/claude-world/trend-pulse?style=flat-square) | Free trending topics aggregator — 20 sources, zero auth. CLI + Python library + MCP Server. |
+
 ### Development Toolkit
 
 | Project | Stars | Description |
 |---------|-------|-------------|
 | **[director-mode-lite](https://github.com/claude-world/director-mode-lite)** | ![Stars](https://img.shields.io/github/stars/claude-world/director-mode-lite?style=flat-square) | Don't write code — direct Claude to write it. 25 commands, 14 agents, 29 skills with TDD Auto-Loop. |
+| **[claude-agent](https://github.com/claude-world/claude-agent)** | ![Stars](https://img.shields.io/github/stars/claude-world/claude-agent?style=flat-square) | Persistent personal assistant powered by Claude Code — autonomous memory, 13 skills, 4 MCP servers. |
 | **[claude-world-examples](https://github.com/claude-world/claude-world-examples)** | ![Stars](https://img.shields.io/github/stars/claude-world/claude-world-examples?style=flat-square) | Practical examples & best practices for Claude Code and Director Mode. |
 
 ### Security
@@ -34,9 +43,8 @@
 | Project | Stars | Description |
 |---------|-------|-------------|
 | **[cf-browser](https://github.com/claude-world/cf-browser)** | ![Stars](https://img.shields.io/github/stars/claude-world/cf-browser?style=flat-square) | Cloudflare Browser Rendering proxy — 10 MCP tools (screenshot, PDF, markdown, scrape, a11y, crawl). |
-| **[trend-pulse](https://github.com/claude-world/trend-pulse)** | ![Stars](https://img.shields.io/github/stars/claude-world/trend-pulse?style=flat-square) | Free trending topics aggregator — 20 sources, zero auth. CLI + Python library + MCP Server. |
-| **[notebooklm-skill](https://github.com/claude-world/notebooklm-skill)** | ![Stars](https://img.shields.io/github/stars/claude-world/notebooklm-skill?style=flat-square) | NotebookLM does the research, Claude writes the content. Research-to-content pipeline with 13 MCP tools. |
 | **[mcp-director-mode-server](https://github.com/claude-world/mcp-director-mode-server)** | ![Stars](https://img.shields.io/github/stars/claude-world/mcp-director-mode-server?style=flat-square) | Teaching MCP Server for Director Mode — TDD, Auto-Cycle, SpecKit demos. |
+| **[claude-101](https://github.com/claude-world/claude-101)** | ![Stars](https://img.shields.io/github/stars/claude-world/claude-101?style=flat-square) | 27 practical AI tools (MCP server + CLI) — real computation for writing, analysis, coding, and business. |
 
 ### Utilities
 
@@ -70,8 +78,8 @@ trend-pulse trending --geo TW --count 10
 
 [**claude-world.com**](https://claude-world.com) &nbsp;•&nbsp;
 [**Discord**](https://discord.com/invite/rBtHzSD288) &nbsp;•&nbsp;
-[**GitHub Issues**](https://github.com/claude-world/director-mode-lite/issues)
+[**Discussions**](https://github.com/orgs/claude-world/discussions)
 
-Made by [Claude World Taiwan](https://claude-world.com) 🇹🇼
+Made by [Claude World Taiwan](https://claude-world.com)
 
 </div>
