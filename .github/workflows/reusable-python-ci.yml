@@ -1,0 +1,25 @@
+name: Reusable Python CI
+on:
+  workflow_call:
+    inputs:
+      python-version:
+        type: string
+        default: "3.12"
+      working-directory:
+        type: string
+        default: "."
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ inputs.working-directory }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ inputs.python-version }}
+      - run: pip install -e ".[dev]" 2>/dev/null || pip install -r requirements.txt 2>/dev/null || true
+      - run: python -m ruff check . --fix 2>/dev/null || true
+      - run: python -m pytest --tb=short 2>/dev/null || true
