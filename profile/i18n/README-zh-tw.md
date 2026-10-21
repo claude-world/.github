@@ -36,14 +36,14 @@ lineage，但不包裝成持續維護中的產品。
 
 | 專案 | Stars | 說明 |
 |------|-------|------|
-| **[claude-skill-antivirus](https://github.com/claude-world/claude-skill-antivirus)** | ![Stars](https://img.shields.io/github/stars/claude-world/claude-skill-antivirus?style=flat-square) | Claude Code Skills 安全掃描器 — 9 引擎偵測 71K+ skills 中的惡意模式。 |
+| **[claude-skill-antivirus](https://github.com/claude-world/claude-skill-antivirus)** | ![Stars](https://img.shields.io/github/stars/claude-world/claude-skill-antivirus?style=flat-square) | Claude Code Skills 安全掃描器 — 10 個引擎掃描 skill 內的每個檔案，不只是 `SKILL.md`。 |
 
 ### MCP 伺服器與整合
 
 | 專案 | Stars | 說明 |
 |------|-------|------|
-| **[cf-browser](https://github.com/claude-world/cf-browser)** | ![Stars](https://img.shields.io/github/stars/claude-world/cf-browser?style=flat-square) | Cloudflare Browser Rendering 代理 — 10 個 MCP 工具（截圖、PDF、Markdown、爬取、無障礙樹）。 |
-| **[trend-pulse](https://github.com/claude-world/trend-pulse)** | ![Stars](https://img.shields.io/github/stars/claude-world/trend-pulse?style=flat-square) | 免費趨勢聚合器 — 20 個來源、零認證。CLI + Python 函式庫 + MCP Server。 |
+| **[cf-browser](https://github.com/claude-world/cf-browser)** | ![Stars](https://img.shields.io/github/stars/claude-world/cf-browser?style=flat-square) | Cloudflare Browser Run 代理 — 17 個 MCP 工具（截圖、PDF、Markdown、爬取、無障礙樹、互動）。 |
+| **[trend-pulse](https://github.com/claude-world/trend-pulse)** | ![Stars](https://img.shields.io/github/stars/claude-world/trend-pulse?style=flat-square) | 免費趨勢聚合器 — 37 個來源、零認證。CLI + Python 函式庫 + 29 工具 MCP Server。 |
 | **[notebooklm-skill](https://github.com/claude-world/notebooklm-skill)** | ![Stars](https://img.shields.io/github/stars/claude-world/notebooklm-skill?style=flat-square) | NotebookLM 做研究，Claude 寫內容。研究到內容的自動化 pipeline，13 個 MCP 工具。 |
 | **[claude-world-studio](https://github.com/claude-world/claude-world-studio)** | ![Stars](https://img.shields.io/github/stars/claude-world/claude-world-studio?style=flat-square) | 以 Agent SDK 與 MCP 串起趨勢探索、研究、內容合成與社群發布。 |
 
@@ -68,15 +68,15 @@ lineage，但不包裝成持續維護中的產品。
 ## 快速開始
 
 ```bash
-# 安裝 Director Mode Lite
-curl -fsSL https://raw.githubusercontent.com/claude-world/director-mode-lite/main/install.sh | bash -s .
+# 將 Director Mode Lite 安裝到專案
+git clone https://github.com/claude-world/director-mode-lite.git
+./director-mode-lite/install.sh --cli all /path/to/your-project
 
-# 掃描 skill 安全性
-npx claude-skill-antivirus scan <skill-name>
+# 安裝前先掃描 skill
+npx claude-skill-antivirus <skill-source>
 
-# 透過 MCP 取得趨勢話題
-pip install "trend-pulse[mcp]"
-trend-pulse trending --geo TW --count 10
+# 查看趨勢話題（免安裝、免 API key）
+uvx trend-pulse trending
 ```
 
 ---
