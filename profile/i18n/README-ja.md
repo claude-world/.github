@@ -36,14 +36,14 @@ experiments、1 labeled upstream fork を分け、archive を維持中の製品�
 
 | プロジェクト | Stars | 説明 |
 |------------|-------|------|
-| **[claude-skill-antivirus](https://github.com/claude-world/claude-skill-antivirus)** | ![Stars](https://img.shields.io/github/stars/claude-world/claude-skill-antivirus?style=flat-square) | Claude Code Skills セキュリティスキャナー — 9 エンジンで 71K+ skills の悪意パターンを検出。 |
+| **[claude-skill-antivirus](https://github.com/claude-world/claude-skill-antivirus)** | ![Stars](https://img.shields.io/github/stars/claude-world/claude-skill-antivirus?style=flat-square) | Claude Code Skills セキュリティスキャナー — 10 エンジンが `SKILL.md` だけでなく skill 内の全ファイルをスキャン。 |
 
 ### MCP サーバー & 連携
 
 | プロジェクト | Stars | 説明 |
 |------------|-------|------|
-| **[cf-browser](https://github.com/claude-world/cf-browser)** | ![Stars](https://img.shields.io/github/stars/claude-world/cf-browser?style=flat-square) | Cloudflare Browser Rendering プロキシ — 10 MCP ツール（スクリーンショット、PDF、Markdown、クロール、a11y）。 |
-| **[trend-pulse](https://github.com/claude-world/trend-pulse)** | ![Stars](https://img.shields.io/github/stars/claude-world/trend-pulse?style=flat-square) | 無料トレンドアグリゲーター — 20 ソース、認証不要。CLI + Python + MCP Server。 |
+| **[cf-browser](https://github.com/claude-world/cf-browser)** | ![Stars](https://img.shields.io/github/stars/claude-world/cf-browser?style=flat-square) | Cloudflare Browser Run プロキシ — 17 MCP ツール（スクリーンショット、PDF、Markdown、クロール、a11y、操作）。 |
+| **[trend-pulse](https://github.com/claude-world/trend-pulse)** | ![Stars](https://img.shields.io/github/stars/claude-world/trend-pulse?style=flat-square) | 無料トレンドアグリゲーター — 37 ソース、認証不要。CLI + Python + 29 ツール MCP Server。 |
 | **[notebooklm-skill](https://github.com/claude-world/notebooklm-skill)** | ![Stars](https://img.shields.io/github/stars/claude-world/notebooklm-skill?style=flat-square) | NotebookLM でリサーチ、Claude でコンテンツ作成。13 MCP ツール搭載のパイプライン。 |
 | **[claude-world-studio](https://github.com/claude-world/claude-world-studio)** | ![Stars](https://img.shields.io/github/stars/claude-world/claude-world-studio?style=flat-square) | Agent SDK と MCP で trend discovery、research、synthesis、social publishing を接続。 |
 
@@ -68,15 +68,15 @@ experiments、1 labeled upstream fork を分け、archive を維持中の製品�
 ## クイックスタート
 
 ```bash
-# Director Mode Lite をインストール
-curl -fsSL https://raw.githubusercontent.com/claude-world/director-mode-lite/main/install.sh | bash -s .
+# Director Mode Lite をプロジェクトに導入
+git clone https://github.com/claude-world/director-mode-lite.git
+./director-mode-lite/install.sh --cli all /path/to/your-project
 
-# skill のセキュリティスキャン
-npx claude-skill-antivirus scan <skill-name>
+# インストール前に skill をスキャン
+npx claude-skill-antivirus <skill-source>
 
-# MCP でトレンドトピックを取得
-pip install "trend-pulse[mcp]"
-trend-pulse trending --geo TW --count 10
+# トレンドを確認（インストール・API キー不要）
+uvx trend-pulse trending
 ```
 
 ---

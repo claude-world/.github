@@ -37,14 +37,14 @@ maintained products.
 
 | Project | Stars | Description |
 |---------|-------|-------------|
-| **[claude-skill-antivirus](https://github.com/claude-world/claude-skill-antivirus)** | ![Stars](https://img.shields.io/github/stars/claude-world/claude-skill-antivirus?style=flat-square) | Security scanner for Claude Code Skills — 9 engines detect malicious patterns across 71K+ skills. |
+| **[claude-skill-antivirus](https://github.com/claude-world/claude-skill-antivirus)** | ![Stars](https://img.shields.io/github/stars/claude-world/claude-skill-antivirus?style=flat-square) | Security scanner for Claude Code Skills — 10 engines scan every file in a skill, not just `SKILL.md`. |
 
 ### MCP Servers & Integrations
 
 | Project | Stars | Description |
 |---------|-------|-------------|
-| **[cf-browser](https://github.com/claude-world/cf-browser)** | ![Stars](https://img.shields.io/github/stars/claude-world/cf-browser?style=flat-square) | Cloudflare Browser Rendering proxy — 10 MCP tools (screenshot, PDF, markdown, scrape, a11y, crawl). |
-| **[trend-pulse](https://github.com/claude-world/trend-pulse)** | ![Stars](https://img.shields.io/github/stars/claude-world/trend-pulse?style=flat-square) | Free trending topics aggregator — 20 sources, zero auth. CLI + Python library + MCP Server. |
+| **[cf-browser](https://github.com/claude-world/cf-browser)** | ![Stars](https://img.shields.io/github/stars/claude-world/cf-browser?style=flat-square) | Cloudflare Browser Run proxy — 17 MCP tools (screenshot, PDF, markdown, scrape, a11y, crawl, interaction). |
+| **[trend-pulse](https://github.com/claude-world/trend-pulse)** | ![Stars](https://img.shields.io/github/stars/claude-world/trend-pulse?style=flat-square) | Free trending topics aggregator — 37 sources, zero auth. CLI + Python library + 29-tool MCP server. |
 | **[notebooklm-skill](https://github.com/claude-world/notebooklm-skill)** | ![Stars](https://img.shields.io/github/stars/claude-world/notebooklm-skill?style=flat-square) | NotebookLM does the research, Claude writes the content. Research-to-content pipeline with 13 MCP tools. |
 | **[claude-world-studio](https://github.com/claude-world/claude-world-studio)** | ![Stars](https://img.shields.io/github/stars/claude-world/claude-world-studio?style=flat-square) | Agent SDK and MCP content operation connecting trend discovery, research, synthesis, and social publishing. |
 
@@ -69,15 +69,15 @@ maintained products.
 ## Quick Start
 
 ```bash
-# Install Director Mode Lite
-curl -fsSL https://raw.githubusercontent.com/claude-world/director-mode-lite/main/install.sh | bash -s .
+# Install Director Mode Lite into a project
+git clone https://github.com/claude-world/director-mode-lite.git
+./director-mode-lite/install.sh --cli all /path/to/your-project
 
-# Scan a skill for security
-npx claude-skill-antivirus scan <skill-name>
+# Scan a skill before installing it
+npx claude-skill-antivirus <skill-source>
 
-# Get trending topics via MCP
-pip install "trend-pulse[mcp]"
-trend-pulse trending --geo TW --count 10
+# See what's trending (no install, no API key)
+uvx trend-pulse trending
 ```
 
 ---
